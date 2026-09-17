@@ -135,3 +135,22 @@ dist/assets/index-xfguccXt.js   211.02 kB │ gzip: 59.07 kB
 ```
 
 All source files have been committed cleanly to the Git repository.
+
+---
+
+## 3. Production Deployments (Parvinder10 Account)
+
+### A. GitHub Source Repository
+- **Repository URL**: [https://github.com/Parvinder10/SupplyGuard](https://github.com/Parvinder10/SupplyGuard)
+- **Account**: `Parvinder10`
+- **Branch**: `main`
+- **Status**: Public & Fully Synced
+
+### B. Vercel Production Portal
+- **Vercel Account/Team**: `parvinder10s-projects`
+- **Project Name**: `supplyguard`
+- **Production URL**: [https://supplyguard-six.vercel.app](https://supplyguard-six.vercel.app)
+- **Canonical Deployment URL**: [https://supplyguard-nt069e6md-parvinder10s-projects.vercel.app](https://supplyguard-nt069e6md-parvinder10s-projects.vercel.app)
+- **Deployment Dashboard**: [https://vercel.com/parvinder10s-projects/supplyguard/BMYcGeyp8SH5y3YXTetjKhfKRaKs](https://vercel.com/parvinder10s-projects/supplyguard/BMYcGeyp8SH5y3YXTetjKhfKRaKs)
+- **HTTP Status Check**: `200 OK`
+- **Continuous Integration**: Connected to repository `https://github.com/Parvinder10/SupplyGuard`
