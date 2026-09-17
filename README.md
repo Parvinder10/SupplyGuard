@@ -11,8 +11,20 @@
 [![Docker](https://img.shields.io/badge/Docker%20Compose-Orchestrated-2496ED.svg)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-> 🚀 **Live Production Deployment**: **[https://supplyguard-six.vercel.app](https://supplyguard-six.vercel.app)**  
-> Hosted on Vercel with real-time interactive dashboards, supplier risk scorecards, explainable ML attribution modals, inventory radar, and incident triage workflows.
+> 🚀 **LIVE PRODUCTION DEPLOYMENT**: **[https://supplyguard-six.vercel.app](https://supplyguard-six.vercel.app)**  
+> Hosted on Vercel under `parvinder10s-projects` with real-time interactive dashboards, supplier risk scorecards, explainable ML attribution modals, inventory radar, and incident triage workflows.
+
+---
+
+## 🚀 LIVE PRODUCTION DEPLOYMENT
+
+| Resource | URL | Details |
+| :--- | :--- | :--- |
+| **Live Production Portal** | **[https://supplyguard-six.vercel.app](https://supplyguard-six.vercel.app)** | Primary production web portal |
+| **Canonical Deployment URL** | **[https://supplyguard-nt069e6md-parvinder10s-projects.vercel.app](https://supplyguard-nt069e6md-parvinder10s-projects.vercel.app)** | Vercel production deployment |
+| **GitHub Repository** | **[https://github.com/Parvinder10/SupplyGuard](https://github.com/Parvinder10/SupplyGuard)** | Source repository on `Parvinder10` |
+
+---
 
 **SupplyGuard** is a production-grade, full-stack Data Integration (DI) and Supply Chain Analytics platform designed for enterprise manufacturing operations. It integrates high-throughput PostgreSQL star-schema data warehousing, Apache Airflow ETL orchestration, explainable Scikit-learn predictive risk models, Apache Superset 3.0 business intelligence dashboards, a robust FastAPI REST backend, and a modern React + TypeScript web portal.
 
