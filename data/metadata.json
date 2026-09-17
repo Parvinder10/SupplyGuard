@@ -1,0 +1,13 @@
+{
+  "suppliers": 120,
+  "materials": 1200,
+  "purchase_orders": 6000,
+  "purchase_order_lines": 10230,
+  "goods_receipts": 8737,
+  "quality_inspections": 8737,
+  "inventory_movements": 110000,
+  "production_schedules": 1500,
+  "bom_allocations": 9023,
+  "factories": 4,
+  "warehouses": 8
+}

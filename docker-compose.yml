@@ -1,0 +1,155 @@
+version: '3.8'
+
+services:
+  # --------------------------------------------------------------------------
+  # 1. PostgreSQL Star-Schema Warehouse
+  # --------------------------------------------------------------------------
+  postgres:
+    image: postgres:16-alpine
+    container_name: supplyguard-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-supplyguard_db}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./warehouse/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql
+      - ./warehouse/dim_date_populate.sql:/docker-entrypoint-initdb.d/02_dim_date.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-supplyguard_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # --------------------------------------------------------------------------
+  # 2. FastAPI REST Backend Service
+  # --------------------------------------------------------------------------
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    container_name: supplyguard-backend
+    restart: always
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-supplyguard_db}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-supplyguard_production_secure_jwt_secret_key_2026}
+      DATA_DIR: /app/data
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # --------------------------------------------------------------------------
+  # 3. React + TypeScript Modern Frontend Portal
+  # --------------------------------------------------------------------------
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    container_name: supplyguard-frontend
+    restart: always
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  # --------------------------------------------------------------------------
+  # 4. Apache Airflow 2.9+ (Init, Webserver, Scheduler)
+  # --------------------------------------------------------------------------
+  airflow-init:
+    image: apache/airflow:2.9.2-python3.11
+    container_name: supplyguard-airflow-init
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-supplyguard_db}
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db init &&
+        airflow users create \
+          --username admin \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email admin@supplyguard.internal \
+          --password admin
+
+  airflow-webserver:
+    image: apache/airflow:2.9.2-python3.11
+    container_name: supplyguard-airflow-webserver
+    restart: always
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-supplyguard_db}
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'true'
+      DATA_DIR: /opt/airflow/data
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./etl:/opt/airflow/etl
+      - ./risk_engine:/opt/airflow/risk_engine
+      - ./data:/opt/airflow/data
+
+  airflow-scheduler:
+    image: apache/airflow:2.9.2-python3.11
+    container_name: supplyguard-airflow-scheduler
+    restart: always
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-supplyguard_db}
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      DATA_DIR: /opt/airflow/data
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./etl:/opt/airflow/etl
+      - ./risk_engine:/opt/airflow/risk_engine
+      - ./data:/opt/airflow/data
+
+  # --------------------------------------------------------------------------
+  # 5. Apache Superset 3.0 Analytics & BI Platform
+  # --------------------------------------------------------------------------
+  superset:
+    image: apache/superset:3.0.0
+    container_name: supplyguard-superset
+    restart: always
+    environment:
+      SUPERSET_SECRET_KEY: ${SUPERSET_SECRET_KEY:-supplyguard_super_secure_enterprise_secret_key_2026}
+      SUPERSET_DATABASE_URI: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-supplyguard_db}
+      SUPERSET_CONFIG_PATH: /app/superset_config.py
+    ports:
+      - "8088:8088"
+    volumes:
+      - ./superset/superset_config.py:/app/superset_config.py
+      - ./superset:/app/bootstrap
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+    driver: local

@@ -1,0 +1,9 @@
+warehouse_id,factory_id,name,warehouse_type,capacity_sqm
+WH-US-RAW-01,FAC-US-01,Detroit Central Raw Materials,RAW_MATERIALS,25000
+WH-US-FIN-01,FAC-US-01,Detroit Finished Goods Distribution,FINISHED_GOODS,35000
+WH-EU-RAW-01,FAC-EU-01,Munich Raw Components Hub,RAW_MATERIALS,18000
+WH-EU-FIN-01,FAC-EU-01,Munich Systems Staging Depot,FINISHED_GOODS,22000
+WH-APAC-RAW-01,FAC-APAC-01,Singapore Cleanroom Raw Buffer,RAW_MATERIALS,15000
+WH-APAC-FIN-01,FAC-APAC-01,Singapore Export Hub,FINISHED_GOODS,20000
+WH-MX-RAW-01,FAC-MX-01,Monterrey Inbound Receiving,RAW_MATERIALS,28000
+WH-MX-FIN-01,FAC-MX-01,Monterrey Border Staging Hub,FINISHED_GOODS,30000

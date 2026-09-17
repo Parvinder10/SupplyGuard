@@ -1,0 +1,121 @@
+supplier_id,name,code,category,country,city,tier,reliability_rating,financial_health_score,baseline_lead_time_days,payment_terms,iso_certified,is_active,created_at
+SUP-0001,Cleveland Capacitors Precision Mfg,VND-00001,Electronic Components,USA,"Cleveland, OH",TIER_3,47.4,55.0,58,NET30,True,True,2025-01-01T00:00:00
+SUP-0002,Detroit Capacitors Precision Mfg,VND-00002,Electronic Components,USA,"Detroit, MI",TIER_2,75.5,82.9,20,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0003,Nagoya Hex Flange Bolts M8 Systems AG,VND-00003,Packaging & Hardware,Japan,Nagoya,TIER_2,79.7,87.2,20,NET60,False,True,2025-01-01T00:00:00
+SUP-0004,Cleveland Silicone Gaskets Solutions Corp,VND-00004,Polymers & Chemical,USA,"Cleveland, OH",TIER_2,75.7,79.7,28,2/10 NET30,False,True,2025-01-01T00:00:00
+SUP-0005,Ho Chi Minh City Titanium Plates Precision Mfg,VND-00005,Raw Metallurgy,Vietnam,Ho Chi Minh City,TIER_2,75.8,83.9,21,NET30,True,True,2025-01-01T00:00:00
+SUP-0006,Ulsan PCBs Systems AG,VND-00006,Electronic Components,South Korea,Ulsan,TIER_1,94.1,90.3,12,NET60,True,True,2025-01-01T00:00:00
+SUP-0007,Taipei Connectors Systems AG,VND-00007,Electronic Components,Taiwan,Taipei,TIER_2,82.9,87.8,22,NET45,True,True,2025-01-01T00:00:00
+SUP-0008,Munich Sensors Global Parts,VND-00008,Electronic Components,Germany,Munich,TIER_2,78.6,85.8,32,NET60,True,True,2025-01-01T00:00:00
+SUP-0009,Incheon Polycarbonate Sheets Industries Inc,VND-00009,Polymers & Chemical,South Korea,Incheon,TIER_3,62.1,37.4,52,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0010,Tokyo Polycarbonate Sheets Solutions Corp,VND-00010,Polymers & Chemical,Japan,Tokyo,TIER_2,87.8,72.8,17,NET45,True,True,2025-01-01T00:00:00
+SUP-0011,Hsinchu Industrial Lubricants Global Parts,VND-00011,Polymers & Chemical,Taiwan,Hsinchu,TIER_2,83.0,87.5,22,NET30,True,True,2025-01-01T00:00:00
+SUP-0012,Saltillo Sensors Technologies,VND-00012,Electronic Components,Mexico,Saltillo,TIER_2,77.7,87.2,14,NET60,True,True,2025-01-01T00:00:00
+SUP-0013,Hsinchu Shafts Materials Ltd,VND-00013,Mechanical & Machining,Taiwan,Hsinchu,TIER_2,85.4,76.7,18,NET45,True,True,2025-01-01T00:00:00
+SUP-0014,Cleveland Antistatic Foam Technologies,VND-00014,Packaging & Hardware,USA,"Cleveland, OH",TIER_3,53.3,52.6,61,NET45,False,True,2025-01-01T00:00:00
+SUP-0015,Detroit Antistatic Foam Materials Ltd,VND-00015,Packaging & Hardware,USA,"Detroit, MI",TIER_3,62.5,33.5,59,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0016,Yokohama Hydraulic Valves Solutions Corp,VND-00016,Mechanical & Machining,Japan,Yokohama,TIER_2,86.7,77.2,23,NET60,True,True,2025-01-01T00:00:00
+SUP-0017,Seoul Hex Flange Bolts M8 Precision Mfg,VND-00017,Packaging & Hardware,South Korea,Seoul,TIER_3,45.5,36.4,52,NET45,False,True,2025-01-01T00:00:00
+SUP-0018,Munich Microcontrollers Materials Ltd,VND-00018,Electronic Components,Germany,Munich,TIER_2,83.7,82.0,22,NET45,True,True,2025-01-01T00:00:00
+SUP-0019,Tainan Hex Flange Bolts M8 Materials Ltd,VND-00019,Packaging & Hardware,Taiwan,Tainan,TIER_2,81.9,71.7,17,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0020,Seoul ABS Resin Pellets Technologies,VND-00020,Polymers & Chemical,South Korea,Seoul,TIER_2,80.8,74.5,17,NET45,True,True,2025-01-01T00:00:00
+SUP-0021,Busan Shafts Global Parts,VND-00021,Mechanical & Machining,South Korea,Busan,TIER_2,90.7,84.5,28,NET30,False,True,2025-01-01T00:00:00
+SUP-0022,Hai Phong Corrugated Heavy Boxes Materials Ltd,VND-00022,Packaging & Hardware,Vietnam,Hai Phong,TIER_1,94.1,93.3,14,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0023,Seoul Gears Industries Inc,VND-00023,Mechanical & Machining,South Korea,Seoul,TIER_1,98.1,92.7,11,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0024,Munich Titanium Plates Systems AG,VND-00024,Raw Metallurgy,Germany,Munich,TIER_2,87.7,70.9,15,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0025,Munich Thermal Pallet Wraps Technologies,VND-00025,Packaging & Hardware,Germany,Munich,TIER_1,93.4,95.4,8,NET45,True,True,2025-01-01T00:00:00
+SUP-0026,Munich Thermal Pallet Wraps Technologies,VND-00026,Packaging & Hardware,Germany,Munich,TIER_2,84.9,75.7,30,NET60,True,True,2025-01-01T00:00:00
+SUP-0027,Nuremberg Copper Rods Precision Mfg,VND-00027,Raw Metallurgy,Germany,Nuremberg,TIER_2,80.1,86.7,24,NET30,False,True,2025-01-01T00:00:00
+SUP-0028,Hsinchu Corrugated Heavy Boxes Solutions Corp,VND-00028,Packaging & Hardware,Taiwan,Hsinchu,TIER_2,79.5,85.9,25,NET45,True,True,2025-01-01T00:00:00
+SUP-0029,Ulsan Bearings Materials Ltd,VND-00029,Mechanical & Machining,South Korea,Ulsan,TIER_2,75.1,75.4,31,NET30,True,True,2025-01-01T00:00:00
+SUP-0030,Nagoya CNC Castings Systems AG,VND-00030,Mechanical & Machining,Japan,Nagoya,TIER_2,79.6,73.8,33,NET60,True,True,2025-01-01T00:00:00
+SUP-0031,Tainan Carbon Steel Bars Materials Ltd,VND-00031,Raw Metallurgy,Taiwan,Tainan,TIER_3,59.6,37.7,61,NET30,True,True,2025-01-01T00:00:00
+SUP-0032,Saltillo Hydraulic Valves Systems AG,VND-00032,Mechanical & Machining,Mexico,Saltillo,TIER_2,87.0,70.2,31,NET30,True,True,2025-01-01T00:00:00
+SUP-0033,Hsinchu Shafts Solutions Corp,VND-00033,Mechanical & Machining,Taiwan,Hsinchu,TIER_2,82.3,75.5,15,NET30,True,True,2025-01-01T00:00:00
+SUP-0034,Guadalajara CNC Castings Industries Inc,VND-00034,Mechanical & Machining,Mexico,Guadalajara,TIER_2,90.0,87.5,27,NET45,True,True,2025-01-01T00:00:00
+SUP-0035,Da Nang Hydraulic Valves Global Parts,VND-00035,Mechanical & Machining,Vietnam,Da Nang,TIER_3,61.9,51.9,45,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0036,Tokyo CNC Castings Global Parts,VND-00036,Mechanical & Machining,Japan,Tokyo,TIER_1,98.6,90.2,10,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0037,Munich Hydraulic Valves Global Parts,VND-00037,Mechanical & Machining,Germany,Munich,TIER_2,89.7,76.3,22,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0038,Nagoya Corrugated Heavy Boxes Industries Inc,VND-00038,Packaging & Hardware,Japan,Nagoya,TIER_2,91.4,70.7,22,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0039,Seoul Copper Rods Solutions Corp,VND-00039,Raw Metallurgy,South Korea,Seoul,TIER_2,75.8,70.0,27,NET45,True,True,2025-01-01T00:00:00
+SUP-0040,Saltillo Connectors Industries Inc,VND-00040,Electronic Components,Mexico,Saltillo,TIER_2,77.1,79.1,23,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0041,Taipei Sheet Metal Stainless 304 Global Parts,VND-00041,Raw Metallurgy,Taiwan,Taipei,TIER_2,81.4,81.1,19,NET60,True,True,2025-01-01T00:00:00
+SUP-0042,Osaka Capacitors Global Parts,VND-00042,Electronic Components,Japan,Osaka,TIER_2,85.3,78.4,24,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0043,Busan Corrugated Heavy Boxes Industries Inc,VND-00043,Packaging & Hardware,South Korea,Busan,TIER_2,85.8,71.7,24,NET45,True,True,2025-01-01T00:00:00
+SUP-0044,Da Nang Hydraulic Valves Technologies,VND-00044,Mechanical & Machining,Vietnam,Da Nang,TIER_3,67.6,53.8,54,NET30,True,True,2025-01-01T00:00:00
+SUP-0045,Frankfurt Antistatic Foam Global Parts,VND-00045,Packaging & Hardware,Germany,Frankfurt,TIER_2,86.2,86.1,14,NET30,True,True,2025-01-01T00:00:00
+SUP-0046,Frankfurt CNC Castings Solutions Corp,VND-00046,Mechanical & Machining,Germany,Frankfurt,TIER_2,89.4,72.4,28,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0047,Taichung Antistatic Foam Solutions Corp,VND-00047,Packaging & Hardware,Taiwan,Taichung,TIER_1,98.8,97.1,13,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0048,Ulsan Polycarbonate Sheets Materials Ltd,VND-00048,Polymers & Chemical,South Korea,Ulsan,TIER_2,88.0,78.7,30,NET45,True,True,2025-01-01T00:00:00
+SUP-0049,Saltillo Capacitors Industries Inc,VND-00049,Electronic Components,Mexico,Saltillo,TIER_2,90.2,72.5,16,NET45,True,True,2025-01-01T00:00:00
+SUP-0050,Guadalajara CNC Castings Global Parts,VND-00050,Mechanical & Machining,Mexico,Guadalajara,TIER_2,84.2,71.1,27,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0051,Monterrey Thermal Pallet Wraps Global Parts,VND-00051,Packaging & Hardware,Mexico,Monterrey,TIER_2,91.0,83.6,23,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0052,Da Nang Antistatic Foam Precision Mfg,VND-00052,Packaging & Hardware,Vietnam,Da Nang,TIER_2,83.3,76.1,26,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0053,Munich Industrial Lubricants Solutions Corp,VND-00053,Polymers & Chemical,Germany,Munich,TIER_2,75.5,77.7,34,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0054,Ulsan Sheet Metal Stainless 304 Global Parts,VND-00054,Raw Metallurgy,South Korea,Ulsan,TIER_2,87.9,75.0,26,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0055,Seoul Connectors Technologies,VND-00055,Electronic Components,South Korea,Seoul,TIER_1,95.3,88.8,17,NET30,True,True,2025-01-01T00:00:00
+SUP-0056,Munich Bearings Precision Mfg,VND-00056,Mechanical & Machining,Germany,Munich,TIER_2,83.1,80.2,17,NET45,True,True,2025-01-01T00:00:00
+SUP-0057,Ho Chi Minh City Sheet Metal Stainless 304 Solutions Corp,VND-00057,Raw Metallurgy,Vietnam,Ho Chi Minh City,TIER_2,87.7,84.0,17,NET45,True,True,2025-01-01T00:00:00
+SUP-0058,Hsinchu Sensors Solutions Corp,VND-00058,Electronic Components,Taiwan,Hsinchu,TIER_2,91.3,86.9,26,NET45,False,True,2025-01-01T00:00:00
+SUP-0059,Cleveland Bearings Materials Ltd,VND-00059,Mechanical & Machining,USA,"Cleveland, OH",TIER_3,67.6,31.1,60,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0060,Taichung Microcontrollers Materials Ltd,VND-00060,Electronic Components,Taiwan,Taichung,TIER_2,83.3,87.3,27,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0061,Nuremberg Epoxy Adhesives Materials Ltd,VND-00061,Polymers & Chemical,Germany,Nuremberg,TIER_1,98.0,92.8,14,NET60,True,True,2025-01-01T00:00:00
+SUP-0062,Hai Phong Shafts Global Parts,VND-00062,Mechanical & Machining,Vietnam,Hai Phong,TIER_2,82.9,82.0,33,NET60,False,True,2025-01-01T00:00:00
+SUP-0063,Frankfurt Sheet Metal Stainless 304 Industries Inc,VND-00063,Raw Metallurgy,Germany,Frankfurt,TIER_2,80.8,82.6,33,NET60,True,True,2025-01-01T00:00:00
+SUP-0064,Munich Hex Flange Bolts M8 Systems AG,VND-00064,Packaging & Hardware,Germany,Munich,TIER_2,84.4,82.4,21,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0065,Cleveland Capacitors Global Parts,VND-00065,Electronic Components,USA,"Cleveland, OH",TIER_2,80.2,76.6,32,NET60,True,True,2025-01-01T00:00:00
+SUP-0066,Osaka Antistatic Foam Industries Inc,VND-00066,Packaging & Hardware,Japan,Osaka,TIER_2,78.9,75.7,20,NET45,True,True,2025-01-01T00:00:00
+SUP-0067,Osaka ABS Resin Pellets Materials Ltd,VND-00067,Polymers & Chemical,Japan,Osaka,TIER_2,78.9,75.4,19,NET45,True,True,2025-01-01T00:00:00
+SUP-0068,Taichung Capacitors Systems AG,VND-00068,Electronic Components,Taiwan,Taichung,TIER_1,96.2,88.1,20,NET60,True,True,2025-01-01T00:00:00
+SUP-0069,Tokyo ABS Resin Pellets Industries Inc,VND-00069,Polymers & Chemical,Japan,Tokyo,TIER_1,96.1,88.7,20,2/10 NET30,False,True,2025-01-01T00:00:00
+SUP-0070,Stuttgart Connectors Industries Inc,VND-00070,Electronic Components,Germany,Stuttgart,TIER_3,50.7,51.4,52,NET45,True,True,2025-01-01T00:00:00
+SUP-0071,Incheon Silicone Gaskets Materials Ltd,VND-00071,Polymers & Chemical,South Korea,Incheon,TIER_2,82.3,81.2,32,NET30,True,True,2025-01-01T00:00:00
+SUP-0072,Guadalajara Shafts Systems AG,VND-00072,Mechanical & Machining,Mexico,Guadalajara,TIER_3,50.5,32.1,52,NET30,True,True,2025-01-01T00:00:00
+SUP-0073,Ulsan Corrugated Heavy Boxes Precision Mfg,VND-00073,Packaging & Hardware,South Korea,Ulsan,TIER_2,79.8,71.3,28,NET45,True,True,2025-01-01T00:00:00
+SUP-0074,Guadalajara Antistatic Foam Technologies,VND-00074,Packaging & Hardware,Mexico,Guadalajara,TIER_2,86.0,84.9,22,NET30,False,True,2025-01-01T00:00:00
+SUP-0075,Taichung Copper Rods Technologies,VND-00075,Raw Metallurgy,Taiwan,Taichung,TIER_2,80.2,87.0,26,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0076,Chicago Vibration Dampers Solutions Corp,VND-00076,Packaging & Hardware,USA,"Chicago, IL",TIER_2,76.6,85.0,35,NET30,True,True,2025-01-01T00:00:00
+SUP-0077,Hsinchu Sheet Metal Stainless 304 Global Parts,VND-00077,Raw Metallurgy,Taiwan,Hsinchu,TIER_2,82.5,73.3,22,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0078,Chicago Silicone Gaskets Global Parts,VND-00078,Polymers & Chemical,USA,"Chicago, IL",TIER_2,86.4,75.9,19,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0079,Hai Phong Industrial Lubricants Technologies,VND-00079,Polymers & Chemical,Vietnam,Hai Phong,TIER_2,80.5,85.6,26,NET30,True,True,2025-01-01T00:00:00
+SUP-0080,Incheon Corrugated Heavy Boxes Precision Mfg,VND-00080,Packaging & Hardware,South Korea,Incheon,TIER_2,85.6,81.3,29,NET30,True,True,2025-01-01T00:00:00
+SUP-0081,Nuremberg Antistatic Foam Systems AG,VND-00081,Packaging & Hardware,Germany,Nuremberg,TIER_2,75.5,81.0,34,NET45,True,True,2025-01-01T00:00:00
+SUP-0082,Hsinchu Titanium Plates Global Parts,VND-00082,Raw Metallurgy,Taiwan,Hsinchu,TIER_3,67.8,33.2,64,NET30,True,True,2025-01-01T00:00:00
+SUP-0083,Ulsan Bearings Systems AG,VND-00083,Mechanical & Machining,South Korea,Ulsan,TIER_2,89.2,74.4,29,NET45,True,True,2025-01-01T00:00:00
+SUP-0084,Taipei Corrugated Heavy Boxes Industries Inc,VND-00084,Packaging & Hardware,Taiwan,Taipei,TIER_2,89.5,86.8,24,NET60,True,True,2025-01-01T00:00:00
+SUP-0085,Saltillo Titanium Plates Solutions Corp,VND-00085,Raw Metallurgy,Mexico,Saltillo,TIER_1,96.2,92.9,9,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0086,Binh Duong Antistatic Foam Industries Inc,VND-00086,Packaging & Hardware,Vietnam,Binh Duong,TIER_1,99.4,94.3,10,NET45,True,True,2025-01-01T00:00:00
+SUP-0087,Cleveland Industrial Lubricants Systems AG,VND-00087,Polymers & Chemical,USA,"Cleveland, OH",TIER_1,95.5,96.7,17,NET45,True,True,2025-01-01T00:00:00
+SUP-0088,Nuremberg Microcontrollers Materials Ltd,VND-00088,Electronic Components,Germany,Nuremberg,TIER_1,93.6,93.0,21,NET45,True,True,2025-01-01T00:00:00
+SUP-0089,Chicago Shafts Industries Inc,VND-00089,Mechanical & Machining,USA,"Chicago, IL",TIER_2,81.8,85.3,16,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0090,Hai Phong Epoxy Adhesives Technologies,VND-00090,Polymers & Chemical,Vietnam,Hai Phong,TIER_2,86.6,88.0,23,NET30,True,True,2025-01-01T00:00:00
+SUP-0091,Hai Phong PCBs Precision Mfg,VND-00091,Electronic Components,Vietnam,Hai Phong,TIER_2,90.4,75.8,15,NET30,True,True,2025-01-01T00:00:00
+SUP-0092,Busan Sheet Metal Stainless 304 Solutions Corp,VND-00092,Raw Metallurgy,South Korea,Busan,TIER_2,86.6,73.1,19,NET30,True,True,2025-01-01T00:00:00
+SUP-0093,Taipei Industrial Lubricants Solutions Corp,VND-00093,Polymers & Chemical,Taiwan,Taipei,TIER_3,55.6,42.9,43,NET30,True,True,2025-01-01T00:00:00
+SUP-0094,Tokyo ABS Resin Pellets Global Parts,VND-00094,Polymers & Chemical,Japan,Tokyo,TIER_1,99.4,95.0,11,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0095,Ho Chi Minh City Polycarbonate Sheets Global Parts,VND-00095,Polymers & Chemical,Vietnam,Ho Chi Minh City,TIER_1,93.7,94.3,13,NET60,True,True,2025-01-01T00:00:00
+SUP-0096,Chicago Carbon Steel Bars Technologies,VND-00096,Raw Metallurgy,USA,"Chicago, IL",TIER_2,86.7,86.4,15,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0097,Da Nang Titanium Plates Materials Ltd,VND-00097,Raw Metallurgy,Vietnam,Da Nang,TIER_2,85.8,74.5,33,NET45,True,True,2025-01-01T00:00:00
+SUP-0098,Yokohama Microcontrollers Solutions Corp,VND-00098,Electronic Components,Japan,Yokohama,TIER_2,77.2,75.9,23,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0099,Ho Chi Minh City Bearings Solutions Corp,VND-00099,Mechanical & Machining,Vietnam,Ho Chi Minh City,TIER_1,98.4,98.1,11,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0100,Saltillo Aluminum Billets 6061 Global Parts,VND-00100,Raw Metallurgy,Mexico,Saltillo,TIER_1,93.9,97.5,10,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0101,Nagoya Antistatic Foam Technologies,VND-00101,Packaging & Hardware,Japan,Nagoya,TIER_2,77.1,82.1,25,NET60,True,True,2025-01-01T00:00:00
+SUP-0102,Austin Copper Rods Technologies,VND-00102,Raw Metallurgy,USA,"Austin, TX",TIER_2,91.0,86.5,24,NET45,True,True,2025-01-01T00:00:00
+SUP-0103,Saltillo Industrial Lubricants Technologies,VND-00103,Polymers & Chemical,Mexico,Saltillo,TIER_3,66.8,57.9,44,NET30,False,True,2025-01-01T00:00:00
+SUP-0104,Frankfurt Antistatic Foam Industries Inc,VND-00104,Packaging & Hardware,Germany,Frankfurt,TIER_2,87.6,77.5,31,NET45,True,True,2025-01-01T00:00:00
+SUP-0105,Binh Duong Connectors Global Parts,VND-00105,Electronic Components,Vietnam,Binh Duong,TIER_1,94.8,92.1,18,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0106,Ho Chi Minh City CNC Castings Systems AG,VND-00106,Mechanical & Machining,Vietnam,Ho Chi Minh City,TIER_2,90.3,76.5,34,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0107,Binh Duong Microcontrollers Systems AG,VND-00107,Electronic Components,Vietnam,Binh Duong,TIER_2,85.9,70.9,14,NET60,True,True,2025-01-01T00:00:00
+SUP-0108,Da Nang CNC Castings Materials Ltd,VND-00108,Mechanical & Machining,Vietnam,Da Nang,TIER_2,78.5,84.6,20,NET45,True,True,2025-01-01T00:00:00
+SUP-0109,Hai Phong Shafts Materials Ltd,VND-00109,Mechanical & Machining,Vietnam,Hai Phong,TIER_1,99.4,90.8,15,NET45,False,True,2025-01-01T00:00:00
+SUP-0110,Munich Sensors Materials Ltd,VND-00110,Electronic Components,Germany,Munich,TIER_2,85.0,73.1,14,NET30,True,True,2025-01-01T00:00:00
+SUP-0111,Hsinchu ABS Resin Pellets Global Parts,VND-00111,Polymers & Chemical,Taiwan,Hsinchu,TIER_2,81.2,72.0,32,NET45,True,True,2025-01-01T00:00:00
+SUP-0112,Saltillo PCBs Systems AG,VND-00112,Electronic Components,Mexico,Saltillo,TIER_1,93.4,97.3,14,2/10 NET30,True,True,2025-01-01T00:00:00
+SUP-0113,Juarez ABS Resin Pellets Technologies,VND-00113,Polymers & Chemical,Mexico,Juarez,TIER_2,77.5,75.0,18,NET60,True,True,2025-01-01T00:00:00
+SUP-0114,Taichung Antistatic Foam Solutions Corp,VND-00114,Packaging & Hardware,Taiwan,Taichung,TIER_2,76.7,85.4,17,NET45,True,True,2025-01-01T00:00:00
+SUP-0115,Ulsan Gears Global Parts,VND-00115,Mechanical & Machining,South Korea,Ulsan,TIER_2,76.6,75.6,27,NET60,True,True,2025-01-01T00:00:00
+SUP-0116,Juarez CNC Castings Technologies,VND-00116,Mechanical & Machining,Mexico,Juarez,TIER_1,93.6,96.2,8,NET60,True,True,2025-01-01T00:00:00
+SUP-0117,Cleveland Corrugated Heavy Boxes Global Parts,VND-00117,Packaging & Hardware,USA,"Cleveland, OH",TIER_2,86.3,85.6,27,NET30,True,True,2025-01-01T00:00:00
+SUP-0118,Osaka Corrugated Heavy Boxes Solutions Corp,VND-00118,Packaging & Hardware,Japan,Osaka,TIER_2,77.6,74.0,29,NET30,True,True,2025-01-01T00:00:00
+SUP-0119,Nagoya Vibration Dampers Solutions Corp,VND-00119,Packaging & Hardware,Japan,Nagoya,TIER_2,82.3,87.5,31,NET30,True,True,2025-01-01T00:00:00
+SUP-0120,Austin Carbon Steel Bars Systems AG,VND-00120,Raw Metallurgy,USA,"Austin, TX",TIER_2,90.7,70.1,25,NET45,True,True,2025-01-01T00:00:00

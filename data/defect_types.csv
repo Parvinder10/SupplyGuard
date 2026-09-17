@@ -1,0 +1,7 @@
+defect_type_code,name,severity,category
+DEF_DIMENSIONAL,Dimensional Out of Tolerance,HIGH,Mechanical
+DEF_SURFACE,Surface Flaw / Scratch / Burr,LOW,Cosmetic
+DEF_ELECTRICAL,Electrical Open / Short / Drift,CRITICAL,Electronics
+DEF_CONTAMINATION,Chemical / Particulate Contamination,CRITICAL,Chemical
+DEF_PACKAGING,Packaging Damage / Moisture Seal Breach,MEDIUM,Logistics
+DEF_METALLURGY,Material Tensile / Hardness Non-conformance,HIGH,Material
