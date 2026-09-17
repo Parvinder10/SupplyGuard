@@ -1,6 +1,8 @@
 # SupplyGuard — Manufacturing Supply-Chain & Inventory Risk Platform
 
-[![CI Pipeline](https://github.com/supplyguard/supplyguard-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/supplyguard/supplyguard-platform/actions)
+[![Live Production Portal](https://img.shields.io/badge/Live%20Demo-supplyguard--six.vercel.app-22c55e?style=for-the-badge&logo=vercel&logoColor=white)](https://supplyguard-six.vercel.app)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Parvinder10%2FSupplyGuard-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Parvinder10/SupplyGuard)
+
 [![Python Version](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.14-blue.svg)](https://www.python.org/)
 [![Database](https://img.shields.io/badge/PostgreSQL-16%20Star--Schema-336791.svg)](https://www.postgresql.org/)
 [![Orchestration](https://img.shields.io/badge/Apache%20Airflow-2.9+-017CEE.svg)](https://airflow.apache.org/)
@@ -8,6 +10,9 @@
 [![Frontend](https://img.shields.io/badge/React-18%20%7C%20TypeScript-61DAFB.svg)](https://react.dev/)
 [![Docker](https://img.shields.io/badge/Docker%20Compose-Orchestrated-2496ED.svg)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+> 🚀 **Live Production Deployment**: **[https://supplyguard-six.vercel.app](https://supplyguard-six.vercel.app)**  
+> Hosted on Vercel with real-time interactive dashboards, supplier risk scorecards, explainable ML attribution modals, inventory radar, and incident triage workflows.
 
 **SupplyGuard** is a production-grade, full-stack Data Integration (DI) and Supply Chain Analytics platform designed for enterprise manufacturing operations. It integrates high-throughput PostgreSQL star-schema data warehousing, Apache Airflow ETL orchestration, explainable Scikit-learn predictive risk models, Apache Superset 3.0 business intelligence dashboards, a robust FastAPI REST backend, and a modern React + TypeScript web portal.
 
